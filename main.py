@@ -2,7 +2,6 @@ def list_of_dictionaries_to_dictionary_of_lists(pilot_tests):
     # this will be the final returned dictionary
     dictionary_of_results = {}
 
-    # ..... complete code .......
     # loop through the dictionaries in list provided
     for dictionary in pilot_tests:
         # loop through the keys and values in a dictionary
@@ -14,6 +13,7 @@ def list_of_dictionaries_to_dictionary_of_lists(pilot_tests):
             # if the pair exists and the value is not already in the key list, append to key value(s)
             elif dictionary[key] == value and value not in dictionary_of_results[key]:
                 dictionary_of_results[key].append(value)
+
 
     # return the newly formed dictionary composed of {pilot : compatible mech(s)}
     return dictionary_of_results
@@ -35,7 +35,7 @@ syncTest3 = {
 pilotTests = [syncTest1, syncTest2, syncTest3]
 for test in pilotTests:
     print("\n Sync Test:")
-    for [pilot, unit] in test.items():
+    for pilot, unit in test.items():
         print("{pilot} can sync with {unit}".format(pilot=pilot, unit=unit))
 
 print("\n Results:")
