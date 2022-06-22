@@ -2,7 +2,6 @@ def list_of_dictionaries_to_dictionary_of_lists(pilot_tests):
     # this will be the final returned dictionary
     dictionary_of_results = {}
 
-    # ..... complete code .......
     # loop through the dictionaries in list provided
     for dictionary in pilot_tests:
         # loop through the keys and values in a dictionary
